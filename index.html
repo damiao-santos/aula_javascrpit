@@ -9,7 +9,16 @@
         
     </script> <!-- a tag script torna possivel utilizar javascrpit dentro do html, ou ancorar um arquivo .js que contem javascript-->
 </head>
-<body>
-    
+<body onload="load()">
+    <button type="button" onclick="redirecionar()">Clique aqui</button> <!--com o atributo onclick podemos chamar uma função JS no botão.-->
+    <p id="agradecimento"></p>
+    <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse Aqui</p>
+    <p id="mousemove5" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o Mouse Aqui</p> <!--onmouseover="" executa a função especificada ao passar o mouse por cima da area especificada-->
+    <select onchange="funcaoChange(this)"> <!--Select cria uma lista dropdown com opções para escolha-->
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+
 </body>
 </html>
