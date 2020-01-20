@@ -125,7 +125,7 @@ onchange - chama a função ao trocar uma escolha e vc pega o valor dessa troca.
 /* o document.getElementByID me restringe a executar a função apenas no id especificado, ao adicionar uma variavel por ex: elemento
 no parametro da função e especificar this na chamada da função no html eu posso trocar qualquer elemento com a função */
 
-/*
+
 function clicou(){
    document.getElementById("agradecimento").innerHTML = "Obrigado por clicar"; // o .innerHTML me permite inserir o dado que eu quiser onde tem a id especificada
     // document.getElementById("agradecimento")// pega o elemento html pela id designada a ele
@@ -150,72 +150,3 @@ function load(){
 function funcaoChange(elemento){
     console.log(elemento.value) //mostra o valor do elemento no console
 }
-
-function soma(a){
-    return function(b){
-        return a + b;
-    }
-
-}
-const soma2 = soma(2)
-
-console.log(soma2(2));
-*/
- 
-/*
-const user = {
-    name: 'Damião',
-    lastName: 'Tenorio Vasconcellos'
-};
-
-function getUserWithFullName(user){
-    return {
-        ...user,
-        fullName: user.name + ' ' +user.lastName
-    }
-}
-
-const userWithFullName = getUserWithFullName(user);
-
-console.log(userWithFullName, user);
-
- const students = [
-    {
-        name: 'Grace',
-        grade: 6
-    },
-    {
-        name: 'Jennifer',
-        grade: 7
-    },
-    {
-        name: 'Paul',
-        grade: 10
-    }
-];
-function getApprovedStudents(studentsList){
-    return studentsList.filter(students => students.grade >= 7);
-}
-console.log("alunos Aprovados: ");
-console.log(getApprovedStudents(students));
-
-console.log("\nLista de Alunos: ");
-console.log(students);
-
-
-
-(() => {
-    let test = "valor função";
-    console.log("Valor da função é: " + test);
-    if (true){
-        let test = "valor if";
-        console.log("Valor dentro de if é: " + test);
-    }
-    if(true){
-        let test = "valor outro if";
-        console.log("Valor dentro de outro if é: " + test);
-    }
-    console.log("Valor apos execução do if  é: " + test);
-}   
-)( ); // o valor de let é alterado dentro dos if mas fora continua o mesmo pq ele respeita o escopo de bloco
-*/
