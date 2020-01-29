@@ -41,7 +41,7 @@ omitidos.
 ex: var sum = a => a + 5;
 
 Caso sejam 2 argumentos os () são obrigatorios, eles também se tornam obrigatórios caso haja destructuring
-ou em caso de hash operator(...a) e tbm com default values (a = 5) => a
+ou em caso de rest operator(...a) e tbm com default values (a = 5) => a
 
 no ES6 há também funções construtoras
 function car(){
