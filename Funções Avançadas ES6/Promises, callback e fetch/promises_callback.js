@@ -42,6 +42,7 @@ doAll();
 ]
 
 agora se quisermos ver erros de cada etapa: 
+
 function doAll(){
     try{
     doSomething(function(data){
@@ -335,10 +336,8 @@ Promise.race([doSomethingPromise(), doOtherThingPromise()]).then(data => {
 
 });
 
-
-
-19:40
 */
+
 
 const doSomethingPromise = () => new Promise((resolve, reject) => {
 
