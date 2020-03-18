@@ -203,7 +203,7 @@ console.log("\nLista de Alunos: ");
 console.log(students);
 
 
-
+*/
 (() => {
     let test = "valor função";
     console.log("Valor da função é: " + test);
@@ -218,4 +218,28 @@ console.log(students);
     console.log("Valor apos execução do if  é: " + test);
 }   
 )( ); // o valor de let é alterado dentro dos if mas fora continua o mesmo pq ele respeita o escopo de bloco
-*/
+
+
+class Thermostat{
+    constructor(fahrenheit) {
+      this.fahrenheit = fahrenheit;
+    }
+    
+    get temperature() {
+      return (5 / 9) * (this.fahrenheit - 32);
+    }
+    
+    set temperature(celsius) {
+      this.fahrenheit = (celsius * 9.0) / 5 + 32;
+    }
+  }
+  /* Alter code above this line */
+  
+  const thermos = new Thermostat(76); // setting in Fahrenheit scale
+  
+  let temp = thermos.temperature; // 24.44 in C
+  thermos.temperature = 40;
+  temp = thermos.temperature; // 26 in C
+  
+  console.log(thermos);
+  console.log(temp)
